@@ -1,6 +1,6 @@
 'use strict';
 
-/* Create a function that takes in a number. 
+/*1. Create a function that takes in a number. 
 The function should return an array that contains every number from 1 to that number as seperate elements */
 
 //----------SOLUTION----------
@@ -24,3 +24,22 @@ const arrReturn = (num) => {
 }
 //call function
 arrReturn(InputNum)
+
+
+/* 2. Take an array and remove every second element from the array. 
+Always keep the first and start removing from the next element. */
+
+//----------SOLUTION----------
+let arrayOne = ['array', 'object', 'string', 'function', 'boolean', 'number'];
+
+const removeEverySecondElem = () => {
+
+//loop through the array
+for(let i = 0; i < arrayOne.length; i++) {
+  
+//use the splice method to remove every second element from the array
+arrayOne.splice(i +1, 1) //i+1 is the index, 1 is the number of elements to remove
+  }
+  console.log(arrayOne)
+}
+console.log(removeEverySecondElem())
