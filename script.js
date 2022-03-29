@@ -10,22 +10,22 @@
   // //ask user to enter value
   // // let InputNum = prompt('Enter Number', '0')
 
-  // //create a function with one parameter 'num'
-  // const arrReturn = (num) => {
-  //   //create an empty array
-  //    let arrNum = [];
-  //    //loop through to get values in the array
-  //    for(let i = 1; i <= InputNum; i++) {
+  //create a function with one parameter 'num'
+  const arrReturn = (num) => {
+    //create an empty array
+     let arrNum = [];
+     //loop through to get values in the array
+     for(let i = 1; i <= InputNum; i++) {
       
-  //     //push values into our empty arrays 
-  //     arrNum.push(i)
-  //     // console.log(i)
-  //    }
-  //    //output our array after pushing new values into it
-  //    console.log(arrNum)
-  // }
-  // //call function
-  // arrReturn(InputNum)
+      //push values into our empty arrays 
+      arrNum.push(i)
+      // console.log(i)
+     }
+     //output our array after pushing new values into it
+     console.log(arrNum)
+  }
+  //call function
+  arrReturn(InputNum)
 
 
   /* 2. Take an array and remove every second element from the array. 
@@ -47,7 +47,8 @@
   console.log(removeEverySecondElem())
 
 
-  /* 3. Write a function add that adds an element to the end of an array. However, the element should only be added if it is not already in the array.
+  /* 3. Write a function add that adds an element to the end of an array. 
+        However, the element should only be added if it is not already in the array.
     Example: add([1, 2], 3) should return [1, 2, 3] and add([1, 2], 2) should return [1, 2]. */
 
     const arrayElems = [10, 20, 30, 40];
