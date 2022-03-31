@@ -8,7 +8,7 @@
   //----------SOLUTION----------
 
   // //ask user to enter value
-  // // let InputNum = prompt('Enter Number', '0')
+  let InputNum = prompt('Enter Number', '0')
 
   //create a function with one parameter 'num'
   const arrReturn = (num) => {
@@ -57,8 +57,41 @@
     const addElemToArray = () => {
 
       //check if the new value is already in the array, if not add it.
-      (arrayElems.indexOf(/*element to check for */ inputValue, /*index*/ 0) === -1) ? arrayElems.push(inputValue) :console.log( 'Value exist already' )
+    console.log(  (arrayElems.indexOf(/*element to check for */ inputValue, /*index*/ 0) === -1) ? arrayElems.push(inputValue) : console.log( 'Value exist already' ) )
  
       console.log(arrayElems)
     }
   addElemToArray()
+
+
+  /*4. Create a function that takes string, Print the reverse of that string to the console
+      Create a function that takes in a string 
+      Alert if the string is a palindrome or not  */
+
+      let strVal = prompt('Enter any word(s)', '');
+
+      const strValFunc = () => {
+
+      //convert string to array. string can't be reversed. 
+       let splitStr =  strVal.split('');
+       console.log(splitStr)
+
+       //reverse array
+       let reverseArr = splitStr.reverse();
+       console.log(reverseArr)
+     
+
+      // //reverse back to string
+      let arrToString = reverseArr.join('')
+      console.log(arrToString)
+
+      //check if input word is a palindrome
+      let output;
+      (strVal.toLowerCase() === arrToString.toLowerCase() ) ? output = `${strVal} is a palindrome` : output = `${strVal} is not a Palindrome. Try again`;
+      console.log(output)
+
+      }
+
+
+    // }
+      strValFunc()
