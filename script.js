@@ -1,105 +1,105 @@
-  // 'use strict';
-  // //--------------ARRAY------------------
+  'use strict';
+  //--------------ARRAY------------------
 
 
-  // /*1. Create a function that takes in a number. 
-  // The function should return an array that contains every number from 1 to that number as seperate elements */
+  /*1. Create a function that takes in a number. 
+  The function should return an array that contains every number from 1 to that number as seperate elements */
 
-  // //----------SOLUTION----------
+  //----------SOLUTION----------
 
-  // // //ask user to enter value
-  // let InputNum = prompt('Enter Number', '0')
+  // //ask user to enter value
+  let InputNum = prompt('Enter Number', '0')
 
-  // //create a function with one parameter 'num'
-  // const arrReturn = (num) => {
-  //   //create an empty array
-  //    let arrNum = [];
-  //    //loop through to get values in the array
-  //    for(let i = 1; i <= InputNum; i++) {
+  //create a function with one parameter 'num'
+  const arrReturn = (num) => {
+    //create an empty array
+     let arrNum = [];
+     //loop through to get values in the array
+     for(let i = 1; i <= InputNum; i++) {
       
-  //     //push values into our empty arrays 
-  //     arrNum.push(i)
-  //     // console.log(i)
-  //    }
-  //    //output our array after pushing new values into it
-  //    console.log(arrNum)
-  // }
-  // //call function
-  // arrReturn(InputNum)
+      //push values into our empty arrays 
+      arrNum.push(i)
+      // console.log(i)
+     }
+     //output our array after pushing new values into it
+     console.log(arrNum)
+  }
+  //call function
+  arrReturn(InputNum)
 
 
-  // /* 2. Take an array and remove every second element from the array. 
-  // Always keep the first and start removing from the next element. */
+  /* 2. Take an array and remove every second element from the array. 
+  Always keep the first and start removing from the next element. */
 
-  // //----------SOLUTION----------
-  // let arrayOne = ['array', 'object', 'string', 'function', 'boolean', 'number'];
+  //----------SOLUTION----------
+  let arrayOne = ['array', 'object', 'string', 'function', 'boolean', 'number'];
 
-  // const removeEverySecondElem = () => {
+  const removeEverySecondElem = () => {
 
-  // //loop through the array
-  // for(let i = 0; i < arrayOne.length; i++) {
+  //loop through the array
+  for(let i = 0; i < arrayOne.length; i++) {
     
-  // //use the splice method to remove every second element from the array
-  // arrayOne.splice(i +1, 1) //i+1 is the index, 1 is the number of elements to remove
-  //   }
-  //   console.log(arrayOne)
-  // }
-  // console.log(removeEverySecondElem())
+  //use the splice method to remove every second element from the array
+  arrayOne.splice(i +1, 1) //i+1 is the index, 1 is the number of elements to remove
+    }
+    console.log(arrayOne)
+  }
+  console.log(removeEverySecondElem())
 
 
-  // /* 3. Write a function add that adds an element to the end of an array. 
-  //       However, the element should only be added if it is not already in the array.
-  //   Example: add([1, 2], 3) should return [1, 2, 3] and add([1, 2], 2) should return [1, 2]. */
+  /* 3. Write a function add that adds an element to the end of an array. 
+        However, the element should only be added if it is not already in the array.
+    Example: add([1, 2], 3) should return [1, 2, 3] and add([1, 2], 2) should return [1, 2]. */
 
-  //   const arrayElems = [10, 20, 30, 40];
-  //   let inputValue = +prompt('Enter a number', '10')
+    const arrayElems = [10, 20, 30, 40];
+    let inputValue = +prompt('Enter a number', '10')
 
-  //   const addElemToArray = () => {
+    const addElemToArray = () => {
 
-  //     //check if the new value is already in the array, if not add it.
-  //   console.log(  (arrayElems.indexOf(/*element to check for */ inputValue, /*index*/ 0) === -1) ? arrayElems.push(inputValue) : console.log( 'Value exist already' ) )
+      //check if the new value is already in the array, if not add it.
+    console.log(  (arrayElems.indexOf(/*element to check for */ inputValue, /*index*/ 0) === -1) ? arrayElems.push(inputValue) : console.log( 'Value exist already' ) )
  
-  //     console.log(arrayElems)
-  //   }
-  // addElemToArray()
+      console.log(arrayElems)
+    }
+  addElemToArray()
 
 
-  // /*4. Create a function that takes string, Print the reverse of that string to the console
-  //     Create a function that takes in a string 
-  //     Alert if the string is a palindrome or not  */
+  /*4. Create a function that takes string, Print the reverse of that string to the console
+      Create a function that takes in a string 
+      Alert if the string is a palindrome or not  */
 
-  //     let strVal = prompt('Enter any word(s)', '');
+      let strVal = prompt('Enter any word(s)', '');
 
-  //     const strValFunc = () => {
+      const strValFunc = () => {
 
-  //     //convert string to array. string can't be reversed. 
-  //      let splitStr =  strVal.split('');
-  //      console.log(splitStr)
+      //convert string to array. string can't be reversed. 
+       let splitStr =  strVal.split('');
+       console.log(splitStr)
 
-  //      //reverse array
-  //      let reverseArr = splitStr.reverse();
-  //      console.log(reverseArr)
+       //reverse array
+       let reverseArr = splitStr.reverse();
+       console.log(reverseArr)
      
 
-  //     // //reverse back to string
-  //     let arrToString = reverseArr.join('')
-  //     console.log(arrToString)
+      // //reverse back to string
+      let arrToString = reverseArr.join('')
+      console.log(arrToString)
 
-  //     let output;
-  //     // check if input word is a palindrome
-  //     (strVal.toLowerCase() === arrToString.toLowerCase() ) ? output = `${strVal} is a palindrome` : output = `${strVal} is not a Palindrome. Try again`;
-  //     console.log(output)
+      let output;
+      // check if input word is a palindrome
+      (strVal.toLowerCase() === arrToString.toLowerCase() ) ? output = `${strVal} is a palindrome` : output = `${strVal} is not a Palindrome. Try again`;
+      console.log(output)
 
-  //     while(strVal.toLowerCase() !== arrToString.toLowerCase() ) {
-  //       strVal = prompt(`${strVal} is not a Palindrome, try again...`)
-  //    }
-  //     console.log (`$word is a palindrome `)
+      while(strVal.toLowerCase() !== arrToString.toLowerCase() ) {
+        strVal = prompt(`${strVal} is not a Palindrome, try again...`)
+     }
+      console.log (`$word is a palindrome `)
 
-  //     }
+      }
 
 
-  //   // }
-  //     strValFunc()
+    // }
+      strValFunc()
 
 
 
@@ -127,4 +127,4 @@ if(integer % 2 !== 0) {
 console.log(arrNumb)
 }
 
-// divisors(17)
+divisors(17)
