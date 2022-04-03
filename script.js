@@ -105,26 +105,30 @@
 
 /*5. Create a function named 'divisors' that takes an integer n > 1 and returns an array with all of the integer's divisors(except for 1 and the number itself), from smallest to largest. If the number is prime return the string '(integer) is prime' */
 
-const divisors = (integer) => {
+let userPromptNumb = prompt('Enter Number', '0');
+const divisors = () => {
   //create an empty array
   let arrNumb = [];
 
  // 2 is assigned to i because the question says the returned array should not include 1
-  for(let i = 2; i < integer; i++){
+  for(let i = 2; i < userPromptNumb; i++){
 //  alert(i)
-  if(integer % i === 0) {
+  if(userPromptNumb % i === 0) {
  //if condition is met, put values to array
     arrNumb.push(i)
   }
 }
 
-// check if integer is a prime number
-if(integer % 2 !== 0) {
-  console.log(`${integer} is a PRIME NUMBER.`)
-} else {
-  console.log(`${integer} is NOT a PRIME NUMBER`)
-}
-console.log(arrNumb)
-}
+//check if integer is a prime number
+if(userPromptNumb % 2 !== 0) {
 
-divisors(17)
+  document.querySelector('#paragraph').innerHTML = `${userPromptNumb} is a PRIME NUMBER.`;
+  // console.log(`${userPromptNumb} is a PRIME NUMBER.`)
+} else {
+  document.querySelector('#paragraph').innerHTML = `${userPromptNumb} is NOT a PRIME NUMBER`;
+  // console.log(`${userPromptNumb} is NOT a PRIME NUMBER`)
+}
+ console.log(arrNumb)
+// }
+}
+divisors(userPromptNumb)
