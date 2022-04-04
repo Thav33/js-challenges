@@ -151,7 +151,7 @@ const sumOfArr = (arrOfNums) => {
   let sum = arrOfNums.reduce((a, c) => {
     return a + c;
   })
-  return sum
+  return `the sum of the array is ${sum} `;
 }
 
 let outputFunc = sumOfArr( [3,2,2,4])
@@ -167,7 +167,7 @@ const arraySum = (arrNums) => {
     total = total + arrNums[i];
   }
 
-  return total;
+  return `the sum of the array equals ${total} `;
 }
 
 let funcCall = arraySum( [5,4,2,1]);
