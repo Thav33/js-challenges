@@ -1,13 +1,13 @@
-//   'use strict';
-//   //--------------ARRAY------------------
+  'use strict';
+//--------------ARRAY------------------
 
 
-//   /*1. Create a function that takes in a number. 
-//   The function should return an array that contains every number from 1 to that number as seperate elements */
+/*1. Create a function that takes in a number. 
+The function should return an array that contains every number from 1 to that number as seperate elements */
 
-//   //----------SOLUTION----------
+//----------SOLUTION----------
 
-  // //ask user to enter value
+//ask user to enter value
   let InputNum = prompt('Enter Number', '0')
 
   //create a function with one parameter 'num'
@@ -240,3 +240,32 @@ return mixSum;
 
 let output = sumOfMixArray()
 console.log(output)
+
+
+/* 8.
+  You get an array of numbers, return the sum of all of the positives ones.
+
+Example [1,-4,7,12] => 1 + 7 + 12 = 20
+
+Note: if there is nothing to sum, the sum is default to 0.*/
+
+//----------SOLUTION----------
+
+let arrNums = [1,-4,7,12];
+
+const sumOfPositiveNums = () => {
+  //filter out all positive numbers in the array
+  let positiveNums = arrNums.filter((element) => {
+    return element > 0;
+  })
+  // return positiveNums
+
+  //return the sum of the filtered positive number
+  let sumOfPositiveNums = positiveNums.reduce((acc, c) => {
+   return acc + c;
+  })
+  return sumOfPositiveNums;
+}
+
+let sumOfPositiveNumsOutput = sumOfPositiveNums()
+console.log(sumOfPositiveNumsOutput)
