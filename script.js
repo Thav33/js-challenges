@@ -175,7 +175,7 @@ console.log(funcCall)
 
 
 
-/*6. There was a test in your class and you passed it. Congratulations!
+/*7. There was a test in your class and you passed it. Congratulations!
 But you're an ambitious person. You want to know if you're better than the average student in your class.
 
 You receive an array with your peers' test scores. Now calculate the average and compare your score!
@@ -218,7 +218,7 @@ const classFunc = () => {
 let functionOutput = classFunc()
 console.log(functionOutput)
 
-/*7.
+/*8.
   Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
 
 Return your answer as a number.
@@ -242,7 +242,7 @@ let output = sumOfMixArray()
 console.log(output)
 
 
-/* 8.
+/*9.
   You get an array of numbers, return the sum of all of the positives ones.
 
 Example [1,-4,7,12] => 1 + 7 + 12 = 20
@@ -272,22 +272,21 @@ console.log(sumOfPositiveNumsOutput)
 
 
 
-/* 9
-Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+//*10
+// Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
 
-For example:
+// For example:
 
-summation(2) -> 3
-1 + 2
+// summation(2) -> 3
+// 1 + 2
 
-summation(8) -> 36
-1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
-*/
+// summation(8) -> 36
+// 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+// */
 
 //----------SOLUTION----------
 
-//create run to perform the summation task
-
+//create function to perform the summation task
 const sum = (num) => {
 
   let total = 0
@@ -305,7 +304,7 @@ let display = sum(10)
 console.log(display)
 
 
-/*10.
+/*11.
 Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
 
 Return your answer as a number. */
