@@ -272,34 +272,62 @@ The function should return an array that contains every number from 1 to that nu
 
 
 
-/* 9
-Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+// /* 9
+// Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
 
-For example:
+// For example:
 
-summation(2) -> 3
-1 + 2
+// summation(2) -> 3
+// 1 + 2
 
-summation(8) -> 36
-1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
-*/
+// summation(8) -> 36
+// 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+// */
+
+// //----------SOLUTION----------
+
+// //create run to perform the summation task
+
+// const sum = (num) => {
+
+//   let total = 0
+//  // loop to get all numbers less than and equal to 'num'
+//   for(let i = 1; i <= num; i++) {
+
+//     //add numbers and save in the 'total' variable
+//      total += i
+//   }
+//   return total
+// }
+
+// //call function
+// let display = sum(10)
+// console.log(display)
+
+
+/*10.
+Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+
+Return your answer as a number. */
 
 //----------SOLUTION----------
 
-//create run to perform the summation task
+let arrOfIntegers = [4, '5', 2, '3', 9, 5,'5'];
 
-const sum = (num) => {
+const sumOfIntegers = () => {
+  //convert all elements in our array to number type and return an new array using 'map' array method
+  let convertToNumbers = arrOfIntegers.map((elements) => {
+    //convert elements to numbers using (+)
+    return +(elements)
+  })
+  // return convertToNumbers
 
-  let total = 0
- // loop to get all numbers less than and equal to 'num'
-  for(let i = 1; i <= num; i++) {
-
-    //add numbers and save in the 'total' variable
-     total += i
-  }
-  return total
+  //calculate the sum of the returned array
+  let sumOfReturnedArray = convertToNumbers.reduce((a, c) => {
+    return a + c;
+  })
+return sumOfReturnedArray
 }
 
-//ca;ll function
-let display = sum(10)
-console.log(display)
+//call function
+console.log(sumOfIntegers())
