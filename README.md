@@ -1,2 +1,2 @@
-# js-daily-challenges
-Daily javascript challenges
+# daily javaScript challenges
+This repo contains javaScript challenges i solved
