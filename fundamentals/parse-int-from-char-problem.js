@@ -11,7 +11,7 @@ const randomAge = Math.floor(Math.random() * 33)
 
 const getAge = (ageString) => {
   let age = +( ageString[0] )
-  console.log(typeof age)
+  // console.log(typeof age)
   return age
 }
 
