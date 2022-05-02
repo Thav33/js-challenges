@@ -11,7 +11,8 @@ Examples
 */
 
 const century = (year) => {
-  
+
+  //math.ceil rounds up(towards the greater value) to the nearest integer
   let result = Math.floor(year / 100)
   return `${result}th Century `;
 }
