@@ -25,6 +25,7 @@ const sortedString = () => {
 
     //loop through array
     for(str of splitString) {
+        //check if looped 'str' is in the new array. if false, push it.
         (!newArr.includes(str)) ? newArr.push(str) : false;
     }
     return newArr.sort().join('')
