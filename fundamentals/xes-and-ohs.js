@@ -27,5 +27,5 @@ const xo = (str) => {
         return x === o;
     }
 
-console.log(xo('ooxxjooxx'))
+console.log(xo('oox0jooxx'))
 
