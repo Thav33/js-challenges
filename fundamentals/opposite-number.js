@@ -11,10 +11,9 @@ Examples:
 
 const oppositeNumber = (numb) => {
 
-    let result = (numb) ? -(numb) : 
-    (-(numb)) ? numb : false
+    let result = (numb) ? -(numb) : numb
 
     return result;
 
 }
-console.log(oppositeNumber(-54.46))
+console.log(oppositeNumber(7464))
