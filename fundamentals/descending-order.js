@@ -15,7 +15,7 @@ const descendingOrder = (numb) => {
         return (b - a)
     })
 
-    return sortSplitNumb.join('')
+    return +(sortSplitNumb.join(''))
 
 }
-console.log(descendingOrder('034251'))
+console.log(descendingOrder('03425101'))
