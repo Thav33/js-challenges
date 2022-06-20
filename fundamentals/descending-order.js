@@ -10,7 +10,7 @@ const descendingOrder = (numb) => {
     //split argument to array
     let splitNumb = numb.split('')
 
-    //sort array in descending order
+    //sort array in descending order 
    let sortSplitNumb = splitNumb.sort((a, b) => {
         return (b - a)
     })
