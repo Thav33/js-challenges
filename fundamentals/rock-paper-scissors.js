@@ -9,7 +9,7 @@ Examples(Input1, Input2 --> Output):
 */
 
 const rps = (player1, player2) => {
-    let result = (player1 == 'scissors' && player2 == 'paper') ? 'Player 1 won' :
+    let result = (player1 === 'scissors' && player2 === 'paper') ? 'Player 1 won' :
     (player1 === 'paper' && player2 === 'rock') ? 'player 1 won' :
     (player1 === 'rock' && player2 === 'scissors') ? 'Player 1 won' :
     (player1 === player2) ? 'Draw' :
